@@ -1,0 +1,50 @@
+<html>
+	<head>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="hearth.css">
+	<script type="text/javascript" src="hearth.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<img class="center-block" src="images/Hearthstone_Logo.png"></img>
+			<h3 class="text-center">Pack Opening Simulator</h3>
+			<hr />
+			<form class="form-inline" onsubmit="return false;">
+			  <div class="form-group">
+				<input type="text" class="form-control" id="numberOfPacks" placeholder="Number of Packs">
+			  </div>
+				<button type="button" id="btnGenerate" class="btn btn-default">Simulate Pack Opening</button>
+				<span id="validate" class="error"></span>
+			</form>
+			<hr />			
+			<div id="summaryContainer" class="row" style="display: none">
+				<div class="col-md-12">
+					<div class="bs-callout bs-callout-info">
+					  <h4>Summary</h4>
+					  <ul id="summaryList">
+					  </ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-striped">
+						<tr>
+							<th>#</th>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+							<th>5</th>
+						</tr>
+						<tbody id="deckResults">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
